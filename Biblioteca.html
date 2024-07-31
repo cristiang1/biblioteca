@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Online</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="Logo Biblioteca">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#libros">Libros</a></li>
+                <li><a href="#autores">Autores</a></li>
+                <li><a href="#categorias">Categorías</a></li>
+                <li><a href="#novedades">Novedades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Buscar libros, autores, categorías...">
+            <button id="search-button">Buscar</button>
+        </div>
+    </header>
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos a la Biblioteca Online</h2>
+            <p>Descubre una amplia colección de libros y autores.</p>
+        </section>
+        <section id="libros" class="hidden">
+            <h2>Libros Disponibles</h2>
+            <ul class="book-list">
+                <!-- Aquí irán los libros -->
+            </ul>
+        </section>
+        <section id="autores" class="hidden">
+            <h2>Autores Destacados</h2>
+            <ul class="author-list">
+                <!-- Aquí irán los autores -->
+            </ul>
+        </section>
+        <section id="categorias" class="hidden">
+            <h2>Categorías</h2>
+            <ul class="category-list">
+                <!-- Aquí irán las categorías -->
+            </ul>
+        </section>
+        <section id="novedades" class="hidden">
+            <h2>Novedades</h2>
+            <ul class="novelty-list">
+                <!-- Aquí irán las novedades -->
+            </ul>
+        </section>
+        <section id="search-results" class="hidden">
+            <h2>Resultados de Búsqueda</h2>
+            <ul class="search-results-list">
+                <!-- Aquí irán los resultados de búsqueda -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <section id="contacto" class="hidden">
+            <h2>Contacto</h2>
+            <form id="contact-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p>Para más información, contáctenos a través de nuestro correo: <a href="mailto:info@biblioteca.com">info@biblioteca.com</a></p>
+        </section>
+        <p>&copy; 2024 Biblioteca Online. Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
